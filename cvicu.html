@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="imag/jpg" href="./img/j-tech.png" />
+
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Damion&display=swap");
      
@@ -50,7 +52,7 @@
   <body>
     <nav class="navbar  navbar-expand-lg bg-danger" data-bs-theme="dark">
   <div class="container-fluid">
-    <a class="navbar-brand" href="./index.html">J-Tech</a>
+    <a class="navbar-brand" href="/index.html">J-Tech</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -63,7 +65,7 @@
   </div>
 </nav>
     <h1>CVICU ITEM LOCATOR</h1>
-    <p class="text-center">P0082</p>
+    <p class="text-center">P0083</p>
 
     <div class="input-group w-75 mx-auto">
       <input
@@ -132,14 +134,15 @@
           itemNumber: "B2020",
           name: "BRUSH SURGICAL W/NAIL CLEANER",
           sequence: "A595CD",
-        },
+        }
       ];
 
       function renderCards(cardsToRender) {
         let cardHTML = "";
         
         if (cardsToRender.length === 0) {
-            cardHTML = '<h2 class="no-match-message">❌ No match found ❌</h2>';
+            cardHTML = '<h2 class="no-match-message">❌ No match found ❌</h2> <img src="./img/error.svg" alt="Searching image" />';
+            
         } else {
             cardsToRender.forEach((card) => {
               cardHTML += `
